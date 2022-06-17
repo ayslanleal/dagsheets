@@ -52,7 +52,7 @@ class DriveService():
 
     def get_fold_modifier(self):
         page_token = None
-        yesterday = str((datetime.today()-timedelta(days=1)).strftime('%Y-%m-%d')+'T'+'00:00:00')
+        yesterday = str((datetime.today()-timedelta(days=5)).strftime('%Y-%m-%d')+'T'+'00:00:00')
         while True:
             response = self.drive_service.files().list(q=f"modifiedTime > '{yesterday}'",
                                                 spaces='drive',
@@ -90,8 +90,9 @@ class SheetsSevice():
     
 if __name__ == '__main__':
     drive = DriveService()
+    sheet = SheetsSevice(drive.get_media())
     if drive.get_fold_modifier():
-        SheetsSevice(drive.get_media())
+        sheet.update_sheets()
     else:
-        print("Não atualizado")
+        print("Nos ultimos 5 dias não houve modificação!")
 
