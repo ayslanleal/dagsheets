@@ -4,7 +4,7 @@
 
 Projeto que simula um serviço de batch no Google Sheets utilizando arquivo de pasta compartilhada no Google Drive. 
 
-[Link arquivo json][https://drive.google.com/drive/folders/1fdNuQje5ZUWrm3cWMPPDtypTkpgRwg3Q?usp=sharing] .
+[Link arquivo json][https://drive.google.com/drive/folders/1fdNuQje5ZUWrm3cWMPPDtypTkpgRwg3Q?usp=sharing]
 [Link spreadsheet][https://docs.google.com/spreadsheets/d/1UlY-tUUTTX_PfXd19wSJ_S2-CcYb8rj5sukpf1UfGt4/edit?usp=sharing]
 
 ### 🛠 Tecnologias
