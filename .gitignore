@@ -1,3 +1,4 @@
 dagsheets/credentials.json
 dagsheets/token.json
 *.json
+!spec/*.json
